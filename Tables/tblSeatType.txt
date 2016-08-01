@@ -1,0 +1,22 @@
+USE [Airline Reservation System]
+GO
+
+/****** Object:  Table [dbo].[tblSeatType]    Script Date: 12/13/15 6:23:20 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblSeatType](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Type] [nvarchar](50) NULL,
+	[price] [float] NULL,
+	[FlightNumber] [nvarchar](10) NULL,
+	[StartSeat] [int] NULL,
+	[EndSeat] [int] NULL
+) ON [PRIMARY]
+
+GO
+
+

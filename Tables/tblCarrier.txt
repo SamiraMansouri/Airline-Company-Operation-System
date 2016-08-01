@@ -1,0 +1,26 @@
+USE [Airline Reservation System]
+GO
+
+/****** Object:  Table [dbo].[tblCarrier]    Script Date: 12/13/15 6:20:17 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblCarrier](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](30) NULL,
+	[Origion] [nvarchar](20) NULL,
+	[WebSite] [nvarchar](50) NULL,
+	[Address] [nvarchar](50) NULL,
+	[phone] [nvarchar](50) NULL,
+ CONSTRAINT [PK_tblCarrier] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
